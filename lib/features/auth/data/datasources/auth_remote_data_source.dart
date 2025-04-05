@@ -37,6 +37,8 @@ class AuthRemoteDataSourceImpl
         ).copyWith(email: currentUserSession!.user.email);
       }
       return null;
+    } on AuthException catch (e) {
+      throw ServerException(e.message);
     } catch (e) {
       throw ServerException(e.toString());
     }
@@ -61,6 +63,8 @@ class AuthRemoteDataSourceImpl
         throw ServerException('User is null!');
       }
       return UserModel.fromJson(response.user!.toJson());
+    } on AuthException catch (e) {
+      throw ServerException(e.message);
     } catch (e) {
       throw ServerException(e.toString());
     }

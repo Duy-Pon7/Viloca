@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:vietour/core/common/cubits/app_user/app_user_cubit.dart';
 import 'package:vietour/core/common/widgets/loader.dart';
+import 'package:vietour/core/constants/constants.dart';
 import 'package:vietour/core/theme/app_pallete.dart';
 import 'package:vietour/core/utils/pick_image.dart';
 import 'package:vietour/core/utils/show_snackbar.dart';
@@ -162,12 +163,7 @@ class _AddNewBlogPageState extends State<AddNewBlogPage> {
                       scrollDirection: Axis.horizontal,
                       child: Row(
                         children:
-                            [
-                                  'Technology',
-                                  'Business',
-                                  'Programming',
-                                  'Entertainment',
-                                ]
+                            Constants.topics
                                 .map(
                                   (e) => Padding(
                                     padding:
