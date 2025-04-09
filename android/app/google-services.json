@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1007661715456",
+    "project_id": "vietrips-1ddeb",
+    "storage_bucket": "vietrips-1ddeb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1007661715456:android:887cff7abca68af62d88e5",
+        "android_client_info": {
+          "package_name": "com.example.vietour"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkRANk3J-qc7j-AplSJocLRlweJJMnYqM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
